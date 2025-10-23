@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.top-header {
+    background-color: #3e2723;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cafe-logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.header-nav a {
+    color: #f5e6d3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #d4af37;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(62, 39, 35, 0.6), rgba(62, 39, 35, 0.6)), 
+                url('cafe.jpg') center/cover no-repeat;       
+    color: white;
+    padding: 140px 20px;
+    text-align: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-overlay p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.explore-btn {
+    background-color: #d4af37;
+    color: #3e2723;
+    padding: 13px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #c9a227;
+}
+
+.menu-section {
+    padding: 80px 20px;
+    background-color: #faf5f0;
+}
+
+.menu-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 55px;
+    color: #3e2723;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+}
+
+.item-title {
+    color: #8B4513;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.item-price {
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-section {
+    padding: 80px 20px;
+}
+
+.about-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 55px;
+    color: #3e2723;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+}
+
+.about-box {
+    text-align: center;
+    padding: 25px;
+}
+
+.box-num {
+    width: 50px;
+    height: 50px;
+    background-color: #8B4513;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto 16px;
+}
+
+.about-box h3 {
+    color: #3e2723;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.about-box p {
+    font-size: 13px;
+    color: #666;
+}
+
+.special-section {
+    background-color: #faf5f0;
+    padding: 80px 20px;
+}
+
+.special-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.special-section h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 55px;
+    color: #3e2723;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+}
+
+.offer-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 4px solid #ddd;
+}
+
+.offer-card.featured-offer {
+    border-top-color: #d4af37;
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.25);
+    transform: scale(1.06);
+}
+
+.offer-card h3 {
+    color: #3e2723;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.offer-price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8B4513;
+    margin-bottom: 5px;
+}
+
+.offer-card p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.offer-list {
+    list-style: none;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.offer-list li {
+    padding: 8px 0;
+    font-size: 13px;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.offer-list li:last-child {
+    border-bottom: none;
+}
+
+.offer-btn {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.offer-btn:hover {
+    background-color: #c0c0c0;
+}
+
+.special-btn {
+    background-color: #8B4513;
+    color: white;
+}
+
+.special-btn:hover {
+    background-color: #6b3410;
+}
+
+.contact-section {
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 55px;
+    color: #3e2723;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.contact-details h3 {
+    color: #3e2723;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-details p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media p {
+    margin-bottom: 12px;
+}
+
+.social-media a {
+    display: inline-block;
+    color: #8B4513;
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #d4af37;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #8B4513;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #6b3410;
+}
+
+.page-footer {
+    background-color: #3e2723;
+    color: #f5e6d3;
+    padding: 25px 20px;
+}
+
+.footer-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container p {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.footer-container a {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-nav {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 36px;
+    }
+
+    .menu-section h2,
+    .about-section h2,
+    .special-section h2,
+    .contact-section h2 {
+        font-size: 30px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-card.featured-offer {
+        transform: scale(1);
+    }
+
+    .menu-grid,
+    .about-grid,
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}
